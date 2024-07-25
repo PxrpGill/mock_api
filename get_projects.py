@@ -117,6 +117,13 @@ async def get_projects(
                 example_project1, 
                 example_project2,
                 example_project3,
+                example_project4,
+                example_project5,
+                example_project1,
+                example_project2,
+                example_project3,
+                example_project4,
+                example_project5
             ]
         )
     
