@@ -82,18 +82,18 @@ async def get_tasks(
         "events": [
             {
                 "id": "12345678-abcd-9876-ijkl-abcdef123456",
-                "responsible": "98765432-abcd-efgh-ijkl-0987654321ef",
+                "responsible": "694a251e-caea-43be-936f-233efbd49de3",
                 "comment": "Найдены узкие места в коде, требуется рефакторинг",
-                "risk": "high",
+                "risk": "done",
                 "type": "bugfix",
                 "startedAt": "2024-08-20",
                 "endedAt": "2024-08-21"
             },
             {
                 "id": "56789012-efgh-3456-mnop-7890abcdef12",
-                "responsible": "11223344-aabb-ccdd-eeff-112233445566",
+                "responsible": "694a251e-caea-43be-936f-233efbd49de3",
                 "comment": "Тестирование оптимизаций на стенде среды",
-                "risk": "medium",
+                "risk": "no risks",
                 "type": "testing",
                 "startedAt": "2024-08-22",
                 "endedAt": "2024-08-23"
@@ -112,7 +112,17 @@ async def get_tasks(
             "name": "Backlog",
             "color": "#f7f7f7"
         },
-        "events": []
+        "events": [
+            {
+                "id": "56789012-efgh-3456-mnop-7890abcdef12",
+                "responsible": "694a251e-caea-43be-936f-233efbd49de3",
+                "comment": "Тестирование оптимизаций на стенде среды",
+                "risk": "have blockers",
+                "type": "testing",
+                "startedAt": "2024-08-22",
+                "endedAt": "2024-08-23"
+            }
+        ]
     }
 
     return TasksResponse(

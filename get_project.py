@@ -4,6 +4,7 @@ from typing import List
 
 router = APIRouter()
 
+
 class Status(BaseModel):
     id: str
     name: str
@@ -103,11 +104,19 @@ async def get_project(slug: str = Path(..., description="The slug of the project
         "responsibles": [
             {
                 "id": "694a251e-caea-43be-936f-aa4efbd49de3",
-                "fullName": "Николай",
+                "fullName": "Иванов Иван Иванович",
                 "team": "client",
-            }
+            },
+            {
+                "id": "694a251e-caea-43be-936f-233efbd49de3",
+                "fullName": "Андреев Андрей Андреевич",
+                "team": "dev",
+            },
         ],
-        "sections": [{"id": "b1385765-aec3-40cd-a8e8-1308bf51a65d", "name": "Каталог"}],
+        "sections": [
+            {"id": "b1385765-aec3-40cd-a8e8-1308bf51a65d", "name": "Каталог"},
+            {"id": "12345678-ijkl-mnop-qrst-1234567890gh", "name": "Тестовый раздел"},
+        ],
     }
 
     example_project2 = {
